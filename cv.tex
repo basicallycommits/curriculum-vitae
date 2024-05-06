@@ -66,6 +66,11 @@
 %for social icons
 \usepackage{fontawesome5}
 
+% Custom command for section titles with icons
+\newcommand{\sectionicon}[2]{%
+    \section[#1]{\faIcon{#2}\quad #1}%
+}
+
 %debug page outer frames
 %\usepackage{showframe}
 
@@ -89,17 +94,21 @@
 
 \begin{tabularx}{\linewidth}{@{} C @{}}
 \Huge{Vincent Walker} \\[7.5pt]
+\fontsize{11}{13}\selectfont
 \href{https://github.com/basicallycommits}{\raisebox{-0.05\height}\faGithub\ basicallycommits} \ $|$ \ 
 \href{https://www.linkedin.com/in/vincent-walker-931531247}{\raisebox{-0.05\height}\faLinkedin\ Vincent Walker} \ $|$ \ 
 \href{mailto:vinlw@hotmail.com}{\raisebox{-0.05\height}\faEnvelope \ vinlw@hotmail.com} \ $|$ \ 
-\href{tel:+64220336756}{\raisebox{-0.05\height}\faMobile \ +64.22.033.6756} \\
+\href{tel:+64220336756}{\raisebox{-0.05\height}\faMobile \ +64.22.033.6756} \ $|$ \ 
+\href{https://www.google.com/maps/place/Auckland/@-36.8593557,174.3764739,10z/data=!3m1!4b1!4m6!3m5!1s0x6d0d47fb5a9ce6fb:0x500ef6143a29917!8m2!3d-36.8508827!4d174.7644881!16zL20vMDEydHM?entry=ttu}{\raisebox{-0.05\height}\faMapMarker \ Auckland, NZ}
 \end{tabularx}
+
+\vspace{0.5cm}
 
 %----------------------------------------------------------------------------------------
 % PERSONAL STATEMENT SECTION
 %----------------------------------------------------------------------------------------
 
-\section{Personal Statement}
+\sectionicon{Personal Statement}{comment-alt}
 
 \begin{tabularx}{\linewidth}{ @{}l r@{} }
 \multicolumn{2}{@{}X@{}}{Third-year Software Engineering student with a curiosity for technology's transformative potential. Strong foundation in programming languages. A dedicated learner and adaptable team player, driven by challenges and committed to making a positive impact through innovative solutions.}  \\
@@ -108,7 +117,8 @@
 %----------------------------------------------------------------------------------------
 %	EDUCATION
 %----------------------------------------------------------------------------------------
-\section{Education}
+
+\sectionicon{Education}{graduation-cap}
 
 \begin{minipage}[t]{0.45\textwidth}
 \textbf{Feb 2022 - Present} \\
@@ -155,7 +165,7 @@
 %	SKILLS
 %----------------------------------------------------------------------------------------
 % Technical Skills
-\section{Technical Skills}
+\sectionicon{Technical Skills}{desktop}
 
 \begin{itemize}
     \item Java, Python, C
@@ -166,7 +176,7 @@
 \end{itemize}
 
 % Personal Skills
-\section{Personal Skills}
+\sectionicon{Personal Skills}{check-double}
 
 \begin{itemize}
     \item Fast learner with a keen approach towards learning new concepts
@@ -179,7 +189,7 @@
 %----------------------------------------------------------------------------------------
 %	AWARDS
 %----------------------------------------------------------------------------------------
-\section{Awards}
+\sectionicon{Awards}{award}
 
 \begin{itemize}
     \item Speech NZ – Grade 5 Speech \& Drama Honours (Speech NZ)
@@ -193,7 +203,7 @@
 %----------------------------------------------------------------------------------------
 %	CLUBS AND SOCIETIES
 %----------------------------------------------------------------------------------------
-\section{Clubs and Societies}
+\sectionicon{Clubs and Societies}{users}
 
 \begin{itemize}
     \item UoA Anime and Manga Club
@@ -205,7 +215,7 @@
 %	INTERESTS AND HOBBIES
 %----------------------------------------------------------------------------------------
 
-\section{Interests and Hobbies}
+\sectionicon{Interests and Hobbies}{heart}
 
 \begin{itemize}
     \item Learning languages (Korean, Japanese)
@@ -219,7 +229,7 @@
 %	REFERENCES
 %----------------------------------------------------------------------------------------
 
-\section{References}
+\sectionicon{References}{user-friends}
 
 \begin{itemize}
     \item Relationship: former Speech \& Drama instructor
