@@ -9,23 +9,18 @@
 %	FONT
 %----------------------------------------------------------------------------------------
 
-% % fontspec allows you to use TTF/OTF fonts directly
-% \usepackage{fontspec}
-% \defaultfontfeatures{Ligatures=TeX}
+% fontspec allows you to use TTF/OTF fonts directly
+\usepackage{fontspec}
+\defaultfontfeatures{Ligatures=TeX}
 
-% % modified for ShareLaTeX use
-% \setmainfont[
-% SmallCapsFont = Fontin-SmallCaps.otf,
-% BoldFont = Fontin-Bold.otf,
-% ItalicFont = Fontin-Italic.otf
-% ]
-% {Fontin.otf}
+% modified for ShareLaTeX use
+\setmainfont{Georgia}
 
 %----------------------------------------------------------------------------------------
 %	PACKAGES
 %----------------------------------------------------------------------------------------
 \usepackage{url}
-\usepackage{parskip} 	
+\usepackage{parskip}
 
 %other packages for formatting
 \RequirePackage{color}
@@ -38,6 +33,7 @@
 
 %for lists within experience section
 \usepackage{enumitem}
+\usepackage{typicons}
 
 % centered version of 'X' col. type
 \newcolumntype{C}{>{\centering\arraybackslash}X} 
@@ -122,14 +118,14 @@
 
 \begin{minipage}[t]{0.45\textwidth}
 \textbf{Feb 2022 - Present} \\
-\textbf{Bachelor of Engineering (Honours) (Software Engineering)} \\
+\textbf{Bachelor of Engineering (Honours) \\ (Software Engineering)} \\
 \textit{The University of Auckland} \\
 (GPA: 8.2/9.0)
 \end{minipage}
 \hfill
 \begin{minipage}[t]{0.45\textwidth}
 \textbf{Relevant Courses:}
-\begin{itemize}
+\begin{itemize}[label=$\bullet$]
     \item Data Structures and Algorithms
     \item Software Quality Assurance
     \item Object-Oriented Programming
@@ -150,7 +146,7 @@
 \hfill
 \begin{minipage}[t]{0.45\textwidth}
 \textbf{Cambridge (CIE) Subjects:}
-\begin{itemize}
+\begin{itemize}[label=$\bullet$]
     \item A-level Mathematics
     \item A-level Physics
     \item A-level Chemistry
@@ -167,18 +163,19 @@
 % Technical Skills
 \sectionicon{Technical Skills}{desktop}
 
-\begin{itemize}
+\begin{itemize}[label=$\bullet$]
     \item Java, Python, C
     \item A strong understanding of object-oriented programming
     \item PostgreSQL
     \item HTML + CSS + Javascript
+    \item UI/UX design with Figma
     \item Fluency in version control with Git/GitHub
 \end{itemize}
 
 % Personal Skills
 \sectionicon{Personal Skills}{check-double}
 
-\begin{itemize}
+\begin{itemize}[label=$\bullet$]
     \item Fast learner with a keen approach towards learning new concepts
     \item A thoughtful communicator, both verbal and written
     \item Detail-oriented and committed to delivering high-quality work
@@ -191,13 +188,14 @@
 %----------------------------------------------------------------------------------------
 \sectionicon{Awards}{award}
 
-\begin{itemize}
+\begin{itemize}[label=$\bullet$]
     \item Speech NZ – Grade 5 Speech \& Drama Honours (Speech NZ)
     \item ATCL Level 4 Diploma in Communication Skills (Trinity College London)
-    \item First in Course Award - 2023 Summer School ENGGEN 140, 2023 Semester 1 SOFTENG 281
-    \item Dean’s Honours List 2022 (Top 5\% of my cohort) (Faculty of Engineering, University of Auckland)
-    \item Certificate of Outstanding Achievement (Department of Computer Science, University of Auckland)
-    \item Certificate of Distinction (Department of Mathematics, University of Auckland)
+    \item First in Course Award - 2023 Summer School ENGGEN 140
+    \item First in Course Award - 2023 Semester 1 SOFTENG 281
+    \item Dean’s Honours List 2022 (Top 5\% of my cohort) (Faculty of Engineering, UoA)
+    \item Certificate of Outstanding Achievement (Department of Computer Science, UoA)
+    \item Certificate of Distinction (Department of Mathematics, UoA)
 \end{itemize}
 
 %----------------------------------------------------------------------------------------
@@ -205,7 +203,7 @@
 %----------------------------------------------------------------------------------------
 \sectionicon{Clubs and Societies}{users}
 
-\begin{itemize}
+\begin{itemize}[label=$\bullet$]
     \item UoA Anime and Manga Club
     \item AUES - Auckland University Engineering Society
     \item Several tech clubs (WDCC, SESA, GDSC, DEVS)
@@ -217,10 +215,10 @@
 
 \sectionicon{Interests and Hobbies}{heart}
 
-\begin{itemize}
+\begin{itemize}[label=$\bullet$]
     \item Learning languages (Korean, Japanese)
-    \item Listening to music, playing video games, watching movies and anime, reading manga
-    \item Archery, going to the gym
+    \item Listening to music; playing video games; watching movies and anime; reading manga
+    \item Archery; going to the gym
     \item Travel
 \end{itemize}
 
@@ -233,7 +231,7 @@
 
 Glenda Pearce
 
-\begin{itemize}
+\begin{itemize}[label=$\bullet$]
     \item Relationship: former Speech \& Drama instructor
     \item Phone: 027 555 5395
     \item Email: gpearce@playshakespeare.com
