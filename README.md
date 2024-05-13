@@ -13,6 +13,9 @@ My CV for applying to part-time jobs.
 ## Part-time Short
 My CV for applying to part-time jobs, but shortened to one page.
 
+## Summer of Tech
+My two-page CV tweaked specifically for Summer of Tech according to their feedback.
+
 ## One-page
 My CV for applying to international companies.
 Length: One page (preferable for intl. firms)
